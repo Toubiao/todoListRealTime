@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<base href="/">
+
+		<title>Starter Node and Angular</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css"> <!-- custom styles -->
+		<script src="/socket.io/socket.io.js"></script>
+	
+	</head>
+	<body ng-app="todoListApp" ng-controller="TodoListController">
+		<div class="container">		
+			<!-- HEADER -->
+			<nav class="navbar navbar-inverse">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">TodoList Real Time</a>
+				</div>
+			</nav>
+
+			<!-- ANGULAR DYNAMIC CONTENT -->
+			<div ng-view></div>
+
+		</div>
+		<!-- JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular-route.min.js"></script>
+		<script src="/libs/socket.js"></script>
+		<!-- ANGULAR CUSTOM -->
+		<script src="js/controllers/TodoListCtrl.js"></script>
+		<script src="js/appRoutes.js"></script>
+		<script src="js/app.js"></script>
+	</body>
+</html>

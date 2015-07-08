@@ -1,0 +1,17 @@
+<div class="jumbotron text-center">
+	<div class="todo-wrapper">
+		<h1>Ma todolist</h1>
+	    <ul>
+			<li ng-repeat="todo in todos">
+			  <button ng-click="delTodo($index)">✘</button>
+			  <span>{{todo.text}}</span>
+			</li>
+	    </ul>
+	    <form>
+			<label for="newtodo">Que dois-je faire ?</label>
+			<input class="add-input" placeholder="I need to..." type="text" ng-model="newTodo" ng-model-instant />
+			<button class="add-btn" ng-click="addTodo()"><h2>Add</h2></button>
+	    </form>
+	<div>
+
+</div>
